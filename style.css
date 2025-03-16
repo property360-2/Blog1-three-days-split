@@ -1,0 +1,189 @@
+/* ===== Global Styles ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ===== Light Theme Colors ===== */
+:root {
+    --primary: #007bff; /* Blue */
+    --secondary: #444; /* Dark Grey */
+    --background: #f8f9fa; /* Light Grey */
+    --text-color: #222; /* Dark Text */
+    --card-bg: #fff; /* White Background */
+    --hover-bg: #0056b3; /* Darker Blue */
+    --footer-bg: #e9ecef; /* Footer Background */
+}
+
+/* ===== Body Styling ===== */
+body {
+    background-color: var(--background);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: 10px;
+}
+
+/* ===== Header and Navigation ===== */
+header {
+    background: var(--card-bg);
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: bold;
+    padding: 8px 12px;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    background: var(--primary);
+    color: white;
+    border-radius: 5px;
+}
+
+/* ===== Main Content Styling ===== */
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: var(--card-bg);
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--primary);
+}
+
+ul{
+    list-style-type: none;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+/* ===== Sections Styling ===== */
+section {
+    margin-top: 40px;
+    padding: 20px;
+    background: var(--card-bg);
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+/* ===== Workout Articles (Exercises) ===== */
+article {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: var(--footer-bg);
+    border-radius: 6px;
+}
+
+h4 {
+    color: var(--hover-bg);
+}
+
+article p {
+    font-size: 14px;
+    color: var(--secondary);
+}
+
+/* ===== Centered Video Styling ===== */
+figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+figure iframe {
+    border-radius: 8px;
+}
+
+/* ===== Hide Figcaptions Visually but Keep for Screen Readers ===== */
+figcaption {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* ===== Footer Styling ===== */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: var(--footer-bg);
+    color: var(--secondary);
+    margin-top: 40px;
+}
+
+/* ===== Responsive Design (Mobile-Friendly) ===== */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .video-container iframe {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* ===== Keyboard Accessibility ===== */
+a:focus,
+button:focus {
+    outline: 2px solid var(--primary);
+    outline-offset: 3px;
+}
+
+/* ===== Dark Mode Support ===== */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: #222;
+        --text-color: #f8f9fa;
+        --card-bg: #333;
+        --secondary: #ddd;
+        --footer-bg: #444;
+    }
+
+    nav ul li a {
+        color: #f8f9fa;
+    }
+}
