@@ -58,6 +58,7 @@
     <footer>
         <p>&copy; 2025 Workout Guide</p>
         <p><small>Created by Jun Alvior</small></p>
+        <p><small>Credits to youtube channel pure gym for the videos i used here</small></p>
     </footer>
 
 </body>
