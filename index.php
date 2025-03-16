@@ -6,6 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Three Days Split Workout</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Three Days Split Workout">
+    <meta property="og:description"
+        content="Maximize strength and muscle growth with this 3-day split workout plan. Get stronger with Push, Pull, Legs & Core training! 💪🔥">
+    <meta property="og:image" content="images/UI.png">
+    <meta property="og:url" content="https://yourwebsite.com/3-day-split-workout">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Workout Guide">
+
+    <!-- Twitter Card Meta Tags (Optional) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Three Days Split Workout">
+    <meta name="twitter:description"
+        content="Maximize strength and muscle growth with this 3-day split workout plan. Get stronger with Push, Pull, Legs & Core training! 💪🔥">
+    <meta name="twitter:image" content="images/UI.png">
 </head>
 
 <body>
